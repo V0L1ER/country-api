@@ -1,0 +1,59 @@
+#root {
+  height: 100%;
+}
+.dFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #a7a4a4;
+  font-weight: 300;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px #6d6d6d;
+}
+.dFlex p {
+  margin-right: 10px;
+}
+.country-information {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px #6d6d6d;
+}
+/* .flags-block{
+    margin-right: 300px;
+} */
+.flags {
+  width: 500px;
+}
+.countryName {
+  font-size: 50px;
+  color: #a7a4a4;
+  font-weight: 300;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px #6d6d6d;
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  width: 13px;
+  height: 13px;
+  margin: 0px 15px 0px 15px;
+  border-top: 13px solid rgb(239, 238, 238);
+  border-right: 13px solid rgb(239, 238, 238);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.arrow:hover {
+  border-top: 13px solid rgb(171, 166, 166);
+  border-right: 13px solid rgb(171, 166, 166);
+}
+.arrow_left {
+  transform: rotate(-135deg);
+}

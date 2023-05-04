@@ -1,0 +1,15 @@
+.header{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 25px;
+    color: #141423;
+}
+.header_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0px 20px 0px;
+}
+.header a {
+    color: #949499;
+}

@@ -1,0 +1,41 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.tabs__header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.tabs__tab {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  color: #a7a4a4;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #1f252d;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.tabs__tab--active {
+  border-bottom: 2px solid black;
+}
+
+.tabs__content {
+  margin-top: 10px;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane--active {
+  display: block;
+}

@@ -1,0 +1,82 @@
+.countries_container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.countries_container a {
+  width: 100%;
+}
+.country_box {
+  width: 100%;
+  height: 55px;
+  border: 1px solid white;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease 0.3s;
+  box-sizing: border-box;
+  text-align: right;
+}
+.index {
+  width: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+.country_info {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+.country_info img {
+  margin: 0px 20px 0px 0px;
+}
+.country_box:hover {
+  background: #2a2c4d;
+}
+.country_box img {
+  margin-left: 2px;
+}
+img {
+  width: 14%;
+}
+.aboutCountry_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aboutCountry {
+  outline: 1px solid white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.aboutCountry > * {
+  outline: 1px solid white;
+}
+.country_name {
+  font-family: Montserrat;
+  color: rgb(178, 214, 245);
+  font-size: 50px;
+  align-items: center;
+  text-align: center;
+}
+.flag {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  height: 200px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0px 0px 20px 0px;
+}
+.flag img {
+    width: 100%;
+    height: 100%;
+}
