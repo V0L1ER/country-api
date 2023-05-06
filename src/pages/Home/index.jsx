@@ -15,9 +15,14 @@ function Home() {
 
   const lastCountryIndex = currentPage * countItems;
   const firstCountryIndex = lastCountryIndex - countItems;
-  const currentCountry = allCountries.slice(firstCountryIndex, lastCountryIndex);
+  const currentCountry = allCountries.slice(
+    firstCountryIndex,
+    lastCountryIndex
+  );
 
-  const paginate = (page) => {setCurrentPage(page)}
+  const paginate = (page) => {
+    setCurrentPage(page);
+  };
 
   useEffect(
     () => async () => {
