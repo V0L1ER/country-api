@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import Tabs from "../../components/Tabs";
 import "./AboutCountry.css";
+import MapContainer from "../../components/MapContainer";
 
 function AboutCountry() {
   const { nameCountry } = useParams();
@@ -117,11 +118,13 @@ function AboutCountry() {
               {/* Регион */}
               <div className="dFlex">
                 <p>Sub region:</p>
-                <dir>{country.subregion}</dir>
+                <div>{country.subregion}</div>
               </div>
             </div>
             {/* Карта */}
-            <div>jghj</div>
+            <div>
+              <MapContainer />
+            </div>
           </Tabs>
         </div>
       </div>
