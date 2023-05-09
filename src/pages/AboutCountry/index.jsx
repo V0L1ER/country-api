@@ -9,8 +9,12 @@ import "./AboutCountry.css";
 import MapContainer from "../../components/MapContainer";
 
 function AboutCountry() {
-  const { nameCountry } = useParams();
   const [country, setCountry] = useState(null);
+
+  let { nameCountry } = useParams();
+  if (nameCountry === "Russia") {
+    nameCountry = "Ukraine";
+  }
 
   useEffect(() => {
     async function fetchCountry() {
@@ -43,7 +47,6 @@ function AboutCountry() {
   return (
     <>
       <Header />
-      About
       <Link to="/" className="arrow arrow_left"></Link>
       <div className="country-information">
         <div className="flags-block">
@@ -95,12 +98,12 @@ function AboutCountry() {
               {/* Населення */}
               <div className="dFlex">
                 <p>Population:</p>
-                <dir>{country.population}</dir>
+                <div>{country.population}</div>
               </div>
               {/* Таймзона */}
               <div className="dFlex">
                 <p>Timezones:</p>
-                <dir>{country.timezones[0]}</dir>
+                <div>{country.timezones[0]}</div>
               </div>
               {/* Валюта */}
               <div className="dFlex">
@@ -113,7 +116,7 @@ function AboutCountry() {
               {/* Континет */}
               <div className="dFlex">
                 <p>Continents:</p>
-                <dir>{country.region}</dir>
+                <div>{country.region}</div>
               </div>
               {/* Регион */}
               <div className="dFlex">

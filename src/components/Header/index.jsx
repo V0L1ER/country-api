@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
       <div className="header header_container">
-        <Link to={"/"}>COUNTRIES LIST</Link>
+        <Link to={"/"}>COUNTRIES</Link>
       </div>
     </>
   );

@@ -16,16 +16,20 @@
   cursor: pointer;
   border-bottom: 2px solid transparent;
   font-size: 15px;
-  color: #a7a4a4;
+  color: #ffffff;
   font-weight: 500;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #1f252d;
+  background-color: #2e2e2e;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.tabs__tab:hover {
+  background-color: #1f1f1f;
+  color: #c4c4c4;
+}
 
 .tabs__tab--active {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .tabs__content {
@@ -38,4 +42,5 @@
 
 .tabs__pane--active {
   display: block;
+  border: 2px solid white;
 }

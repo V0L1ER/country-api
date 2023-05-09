@@ -9,8 +9,11 @@ const MapContainer = () => {
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyBcbQOenBrouiGdjYHHIpHvAD9Lzxn3K84",
   });
-  const { nameCountry } = useParams();
   const [country, setCountry] = useState(null);
+  let { nameCountry } = useParams();
+  if (nameCountry === "Russia") {
+    nameCountry = "Ukraine";
+  }
 
   useEffect(() => {
     async function fetchCountry() {
