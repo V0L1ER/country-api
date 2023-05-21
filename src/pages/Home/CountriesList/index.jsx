@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./CountriesList.css";
 
-function CountriesList({ allCountry,  }) {
+function CountriesList({ allCountry  }) {
   const [searchValue, setSearchValue] = useState(""); 
   const [selectedCountry, setSelectedCountry] = useState(null); 
 
@@ -15,7 +15,7 @@ function CountriesList({ allCountry,  }) {
   const filteredCountries = allCountry.filter((item) => {
     const countryName = item.name.common.toLowerCase();
     const searchQuery = searchValue.toLowerCase();
-    return countryName.includes(searchQuery);
+    return countryName. startsWith(searchQuery);
   });
 
   const handleCountrySelect = (country) => {
@@ -43,7 +43,7 @@ function CountriesList({ allCountry,  }) {
   };
 
   return (
-    <>
+    <> 
       <div className="aboutCountry_container">
       <div className="input_box">
         <input
